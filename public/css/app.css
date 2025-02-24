@@ -1,0 +1,247 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(135deg, #333, #fff);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#app {
+    background-color: rgba(255, 255, 255, 0.4); 
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+.app-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.input-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 10px;
+}
+
+.input-label {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 8px;
+    
+}
+
+.input-field {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+
+.total-cost {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.breakdown {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.breakdown li {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+
+@media (min-width: 1200px) {
+    #app {
+        width: 90%;
+        max-width: 1200px;
+        padding: 40px;
+    }
+
+    .app-title {
+        font-size: 48px;
+    }
+
+    .input-row {
+        flex-wrap: nowrap;
+    }
+
+    .card {
+        padding: 30px;
+    }
+
+    .total-cost {
+        font-size: 32px;
+    }
+
+    .breakdown li {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 1199px) and (min-width: 768px) {
+    #app {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .app-title {
+        font-size: 36px;
+    }
+
+    .input-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .card {
+        padding: 25px;
+    }
+
+    .total-cost {
+        font-size: 24px;
+    }
+
+    .breakdown li {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 767px) and (min-width: 480px) {
+    #app {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .app-title {
+        font-size: 30px;
+    }
+
+    .input-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .input-field {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .total-cost {
+        font-size: 22px;
+    }
+
+    .breakdown li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 479px) {
+    #app {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .app-title {
+        font-size: 26px;
+    }
+
+    .input-row {
+        flex-direction: column;
+    }
+
+    .input-field {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .total-cost {
+        font-size: 18px;
+    }
+
+    .breakdown li {
+        font-size: 12px;
+    }
+}
+
+
+#backgroundImg {
+    width: 100%;
+    height: 100%;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    object-fit: cover; 
+    opacity: 0.2; 
+    z-index: -1;
+}
+
